@@ -12,6 +12,21 @@
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
-		"target": "es2020"
+		"target": "es2020",
+		"baseUrl": ".",
+		"paths": {
+			"$parts": [
+				"src/parts"
+			],
+			"$parts/*": [
+				"src/parts/*"
+			],"$lib": [
+				"src/lib"
+			],
+			"$lib/*": [
+				"src/lib/*"
+			],
+			"calendar": ["types/calendar"]
+		},
 	}
 }
