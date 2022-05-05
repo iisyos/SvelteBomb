@@ -3,9 +3,9 @@ import type { Writable } from 'svelte/store';
 import type { Unit,Label } from '../../types'
 
 
-const nameList=['あかり','ひな','ちか','ゆか','ゆうり','りな','きさき']
+const nameList=['陽奈','千佳','ゆか','ゆうり','りな','きさき','環奈','くるみ','愛美','ユリア','さやか','香里奈','絢香']
 const todoList=[{todo:'とデート💕',color:'pink'},{todo:'に告白',color:'red'},{todo:'と買い物',color:'yellow'},
-                {todo:'と水族館',color:'blue'},{todo:'とユニバ',color:'purple'},{todo:'と食事🍚',color:'white'},{todo:'と電話📞',color:'grey'}]
+                {todo:'と水族館',color:'blue'},{todo:'とユニバ',color:'purple'},{todo:'と食事🍚',color:'white'},{todo:'と電話📞',color:'grey'},{todo:'記念日✨',color:'green'}]
 
 
 export const unitList:Writable<Unit[]> = writable([]);

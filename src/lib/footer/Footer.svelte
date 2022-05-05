@@ -116,6 +116,9 @@ table {
   .blue{
 	background: rgb(113,199,236);
   }
+  .green{
+    background:rgb(168,231,191)
+  }
   .purple{
 	background: rgb(207, 159, 255);
   }
