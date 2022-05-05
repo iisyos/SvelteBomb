@@ -21,7 +21,7 @@
 <Header/>
 {#if unitsObj.length !==0}
 <div class='app'>
-	<div style="max-width: 350px;">		
+	<div style="max-width: 570px;">		
 		<main>
 			<slot />
 		</main>
