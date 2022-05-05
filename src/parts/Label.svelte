@@ -7,10 +7,6 @@
 <script lang="ts">
 import type { Unit as UnitType,Label as LabelType } from '../../types'
 export let label:LabelType;
-
-let countValue:number;
-
-
 </script>
 
 <style>
@@ -34,7 +30,7 @@ let countValue:number;
       transform: scale(0.5);
     }
     .pink{
-      background: rgb(224, 197, 219);
+      background: rgb(255,221,244);
     }
     .red{
       background: rgb(240,128,128);

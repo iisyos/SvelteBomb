@@ -1,6 +1,7 @@
 
 <script lang="ts">
 	import Header from '$lib/header/Header.svelte'; 
+	import Footer from '$lib/footer/Footer.svelte'
 	import '../app.css';
 	import type { Unit as UnitType,Label as LabelType } from '../../types'
     import { unitList,set} from '$lib/store';
@@ -25,26 +26,22 @@
 			<slot />
 		</main>
 	</div>
+	<Footer/>
 </div>
+
 {/if}
+
 
 
 <style>
 	main {
 		padding: 4px;
-		/* flex: 1;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		max-width: 1024px;
-		margin: 0 auto;
-		box-sizing: border-box;
-		background: rgba(100, 100, 100, 0.3);
-		height: 100%; */
 	}
 	.app{
 		display: flex;
 		justify-content: center;
+		align-items: center;
+		height: calc(100vh - 258px);
 		/* background-color: rgba(29,29,29,255); */
 	}
 </style>

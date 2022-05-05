@@ -32,14 +32,13 @@
 <style>
   @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
     .day{
-        width: 20%;
-        aspect-ratio: 10/16;
+        width: 27%;
+        aspect-ratio: 13/16;
         position: relative;
         top: 0;
         left: 0;
         font-size: 10px;
         font-family: system-ui;
-        /* padding:0 1px 2px; */
         margin-bottom: 2px;
         font-weight: bold;
         display: flex;
