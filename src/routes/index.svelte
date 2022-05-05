@@ -22,7 +22,7 @@ onMount(()=>{
   openGraph={{
     type: 'website',
     url: 'https://my-calendar-today.com/',
-    title: 'My Calendar Today'    
+    title: 'My Calendar'    
   }}
 />
 
