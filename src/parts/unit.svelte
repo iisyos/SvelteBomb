@@ -5,7 +5,7 @@
     import { unitList} from '$lib/store';
     export let day:number;
 
-    const today = (new Date()).getDate()===day;
+    const today = (new Date()).getDate() === day+1;
 
 	let unitsObj:UnitType;
 	unitList.subscribe(value => {

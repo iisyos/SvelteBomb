@@ -10,7 +10,7 @@
 
 	let unitsObj:UnitType;
 	unitList.subscribe(value => {
-		unitsObj = (value as UnitType[])[today.getDate()];
+		unitsObj = (value as UnitType[])[today.getDate()-1];
     });
     
 
