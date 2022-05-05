@@ -46,6 +46,7 @@
     "calendar": "^0.1.1",
     "cookie": "^0.4.1",
     "fontawesome-svelte": "^2.0.1",
-    "svelte-fa": "^2.4.0"
+    "svelte-fa": "^2.4.0",
+    "svelte-meta-tags": "^2.5.1"
   }
 }
