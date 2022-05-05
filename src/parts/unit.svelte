@@ -5,26 +5,28 @@
     import { unitList} from '$lib/store';
     export let day:number;
 
+    const today = (new Date()).getDate()===day;
+
 	let unitsObj:UnitType;
 	unitList.subscribe(value => {
 		unitsObj = (value as UnitType[])[day];
     });
-
     
 </script>
 
-<div class="unit {(day+1)%7===0?'right-border':''} {day>27?'bottom-border':''}">
-    <div class="day">
-        {day}
-    </div>
-    {#if unitsObj}
+<div class="unit {(day+1)%7===0?'right-border':''} {day>27?'bottom-border':''} {unitsObj.day?'':'none-color'} {today?'today-bg':''}">
+    {#if unitsObj.day}
+         <div class="day {unitsObj.isSunday?'text-red':''}{unitsObj.isSaturday?'text-blue':''} {today?'today':''}">
+            {unitsObj.day}
+        </div>
+    {/if}
+
     {#each unitsObj.labels as label}
-    <div class='label-wrapper'>
+    <div class='label-wrapper {unitsObj.day?'':'none'}'>
         <Label  {label}/>
     </div>
     {/each}
-    {:else}
-    {/if}
+
 </div>
 
 <style>
@@ -37,8 +39,26 @@
         left: 0;
         font-size: 10px;
         font-family: system-ui;
-        padding:0 1px 2px;
+        /* padding:0 1px 2px; */
+        margin-bottom: 2px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
       /* transform: scale(0.5); */
+    }
+    .today-bg{
+        background:  rgba(185, 189, 193,0.3)!important;
+    }
+
+    .today{
+        background: black;
+        color: white;
+    }
+    .none-color{
+        background:rgba(10, 10, 10,0.1)!important ;
+    }
+    .none{
+        display: none;
     }
     .right-border{
         border-right: 1px solid !important;
@@ -52,11 +72,17 @@
         padding-right: 1px;
         padding-left: 1px;
     }
+    .text-red{
+        color: rgb(255, 68, 51);
+    }
+    .text-blue{
+        color: rgb(31, 117, 254);
+    }
 
     .unit{
         width: calc(95%/7);
         aspect-ratio: 10/16;
-        background: rgba(10, 10, 10,0.01);
+        background: rgba(10, 10, 10,0.01) ;
         border: 1px solid;
         border-right: none;
         border-bottom: none;

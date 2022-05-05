@@ -27,7 +27,6 @@ let countValue:number;
         white-space: nowrap;
         margin-bottom: 3px;
     }
-  
 
     .text{
       font-size: 10px;

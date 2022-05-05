@@ -3,7 +3,9 @@ export type Unit = {
   isRight?:boolean,
   isBottom?:boolean, 
   day:number,
-  mass:number
+  mass:number,
+  isSunday?:boolean,
+  isSaturday?:boolean
 }
  
 export type Label=Name & Todo
