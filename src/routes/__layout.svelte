@@ -25,7 +25,7 @@
 		</main>
 	</div>
 </div>
-<Footer/>
+	<Footer/>
 
 {/if}
 
@@ -39,7 +39,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: calc(100vh - 200px);
+		height: calc(100% - 200px);
 		/* background-color: rgba(29,29,29,255); */
 	}
 </style>
