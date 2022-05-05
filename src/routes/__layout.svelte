@@ -24,8 +24,8 @@
 			<slot />
 		</main>
 	</div>
-	<Footer/>
 </div>
+<Footer/>
 
 {/if}
 

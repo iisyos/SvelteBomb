@@ -56,9 +56,7 @@
 footer {
     border-top: 0.1px solid;
     border-color: grey;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+   
     width: 100%;
     height:150px;
 }
