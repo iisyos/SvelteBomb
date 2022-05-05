@@ -28,6 +28,13 @@ export let label:LabelType;
       font-size: 10px;
       padding:2% 7% 0;
       transform: scale(0.5);
+      
+}
+@media screen and (max-width: 500px) {
+        .text {
+      transform: scale(0.7);
+
+    }
     }
     .pink{
       background: rgb(255,221,244);
