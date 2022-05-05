@@ -5,7 +5,6 @@
 	import { unitList,shuffle, set} from '$lib/store';
 	import { onMount } from 'svelte';
   import { MetaTags } from 'svelte-meta-tags';
-  import calendar from '$lib/calendar.jpg';
 
 onMount(()=>{
 	set()
@@ -23,13 +22,7 @@ onMount(()=>{
   openGraph={{
     type: 'website',
     url: 'https://my-calendar-today.com/',
-    title: 'My Calendar Today',
-    images: [
-      {
-        url: calendar,
-        alt: 'Og Image Alt'
-      }
-    ]
+    title: 'My Calendar Today'    
   }}
 />
 
