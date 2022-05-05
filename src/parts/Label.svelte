@@ -30,7 +30,7 @@ export let label:LabelType;
       transform: scale(0.5);
       
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) {
         .text {
       transform: scale(0.7);
 
