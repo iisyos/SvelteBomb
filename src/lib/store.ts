@@ -11,16 +11,10 @@ const todoList=[{todo:'とデート💕',color:'pink'},{todo:'に告白',color:'
 export const unitList:Writable<Unit[]> = writable([]);
 
 export function set(){
-    const aaa=initialize()
-    unitList.set(aaa)
+    unitList.set(initialize())
 }
 
 export function shuffle(){
-    // unitList.set(initialize())
-    const now: Date = new Date();
-	const prePad: number = new Date( now.getFullYear(), now.getMonth(), 1 ).getDay();
-	const lastDay: number = new Date( now.getFullYear(), now.getMonth() + 1, 0 ).getDate();
-    console.log(lastDay)
     unitList.update((unit)=>{      
         unit = initialize();  
             return unit;
@@ -44,7 +38,6 @@ const days = Array.from(Array(35).keys(), (i) => {
             let labels:Label[]=[];
             const day = num < days.length? days[num].getDate():0;
             const dayOfWeek= num < days.length? days[num].getDay():'';
-            if( num < days.length)console.log(days[num].getDate())
             
             for (let num = 0; num < labelMass; num++) {
                 const ramdomName = nameList[Math.floor(Math.random() * nameList.length)]

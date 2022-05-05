@@ -12,8 +12,6 @@
 		unitsObj = (value as UnitType[]);
     });
 	onMount(()=>{
-		console.log('---')
-
 	set()
 
 })
@@ -41,7 +39,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: calc(100vh - 258px);
+		height: calc(100vh - 200px);
 		/* background-color: rgba(29,29,29,255); */
 	}
 </style>
